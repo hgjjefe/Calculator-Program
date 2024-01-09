@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <div class="flex-container">
+            <input id="indicator" readonly>
+            <input id="indicator2" readonly>
+        </div>
+        <input id="display" readonly>
+        <input id="result" readonly>
+        <div id="control-keys">
+            <button onclick="activateBtn('SHIFT')" id="SHIFT" class="even-smaller-text control-btn">SHIFT</button>
+            <button onclick="activateBtn('ALPHA')" id="ALPHA" class="even-smaller-text control-btn">AlPHA</button>
+            <button onclick="cursorLeftmost()" class="control-btn"><<</button>
+            <button onclick="cursorRightmost()" class="control-btn">>></button>
+            <button onclick="activateBtn('RAD')" id="RAD" class="control-btn">rad</button>
+            <button onclick="returnHome()" class="control-btn">ON</button>
+        </div>
+        <div id="sci-keys">
+            
+            <button onclick="appendToDisplay('7')" class="operator-btn even-smaller-text">Prog</button>
+            <button onclick="activateBtn('FMLA')" id="FMLA" class="operator-btn even-smaller-text" >FMLA</button>
+            <button onclick="cursorLeft()" class="control-btn"><</button>
+            <button onclick="cursorRight()" class="control-btn">></button>
+            <button onclick="appendToDisplay('!')" class="larger-text">!</button>
+            <button onclick="appendToDisplay('e', 'Math.E')" class="larger-text">e</button>
+            <button onclick="convertToFraction()">b/c</button>
+            <button onclick="appendToDisplay('√(', 'Math.sqrt(')">√</button>
+            <button onclick="appendToDisplay('²', '^2')">n<sup>2</sup></button>
+            <button onclick="appendToDisplay('^', '^')">^</button>
+            <button onclick="appendToDisplay('log(', 'mylog(')">log</button>
+            <button onclick="appendToDisplay('ln(', 'Math.log(')">ln</button>
+            <button onclick="store('A')" class="larger-text">A</button>
+            <button onclick="store('B')" class="larger-text">B</button>
+            <button onclick="store('C')" class="larger-text">C</button>
+            <button onclick="appendToDisplay('sin(', 'trigo(Math.sin,')" id="sin">sin</button>
+            <button onclick="appendToDisplay('cos(', 'trigo(Math.cos,')">cos</button>
+            <button onclick="appendToDisplay('tan(', 'trigo(Math.tan,')">tan</button>
+            <button onclick="activateBtn('STO')" id="STO">STO</button>
+            <button onclick="store('D')" class="larger-text">D</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="appendToDisplay(',')">,</button>
+            <button onclick="Mplus()">M+</button>
+            
+        </div>
+        <div id="main-keys">
+            
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="del()" class="smaller-text operator-btn">DEL</button>
+            <button onclick="clearDisplay()" class="operator-btn smaller-text">AC</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('×', '*')" >×</button>
+            <button onclick="appendToDisplay('÷', '/')" >÷</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" >+</button>
+            <button onclick="appendToDisplay('-')">–</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="appendToDisplay('π', 'Math.PI')">π</button>
+            <button onclick="appendToDisplay('ans')" class="smaller-text">Ans</button>
+            <button onclick="calculate()" class="smaller-text">EXE</button>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
