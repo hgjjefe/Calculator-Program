@@ -7,6 +7,7 @@ For the input/output information of the formulas, please refer to the comments o
 Also, the AlPHA button toggles small text. 
 
 Credits:
+
 The calculator template is based on the simple calculator from Bro Code:
 https://www.youtube.com/watch?v=I5kj-YsmWjM&t=701s&ab_channel=BroCode
 
